@@ -5,3 +5,4 @@ read -p "Enter the input b" b
 read -p "Enter the input c" c
 
 result=$((a+b*c))
+result1=$((a*b+c))
