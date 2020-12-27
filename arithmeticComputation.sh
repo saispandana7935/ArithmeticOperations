@@ -16,3 +16,11 @@ Results["c+a/b"]=$result2
 Results["a%b+c"]=$result3
 
 echo ${Results[@]}
+	val=0
+
+for value in ${Results[@]}
+do
+	values[val]=$value
+	((val++))
+done
+echo "values from dictionary to array" ${values[@]}
