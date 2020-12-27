@@ -24,3 +24,6 @@ do
 	((val++))
 done
 echo "values from dictionary to array" ${values[@]}
+
+sorted=$( printf '%s\n' "${values[@]}" | sort -nr)
+echo $sorted
