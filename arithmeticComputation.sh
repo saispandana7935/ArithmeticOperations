@@ -8,3 +8,11 @@ result=$((a+b*c))
 result1=$((a*b+c))
 result2=$((c+a/b))
 result3=$((a%b+c))
+
+declare -A Results
+Results["a+b*c"]=$result
+Results["a*b+c"]=$result1
+Results["c+a/b"]=$result2
+Results["a%b+c"]=$result3
+
+echo ${Results[@]}
