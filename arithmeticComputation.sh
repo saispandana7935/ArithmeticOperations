@@ -26,4 +26,8 @@ done
 echo "values from dictionary to array" ${values[@]}
 
 sorted=$( printf '%s\n' "${values[@]}" | sort -nr)
-echo $sorted
+sortAscending=$( printf '%s\n' "${values[@]}" | sort -n)
+
+echo "Result In Descending Order" $sorted
+
+echo "Result In Ascending Order" $sortAscending
